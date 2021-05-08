@@ -53,6 +53,7 @@ export default function Dashboard(): JSX.Element {
               className="h-5 w-5 text-scooter focus:ring-scooter border-gray-300 rounded"
               checked={showArchived}
               onChange={() => setShowArchived(!showArchived)}
+              disabled={isFetching} // Prevent checkbox spamming that can cause multiple requests to fire, other option could have been request cancelling on checkbox spam
             />
             <label htmlFor="showArchived" className="ml-2 block text-sm text-gray-900">
               Show Archived
