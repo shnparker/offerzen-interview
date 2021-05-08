@@ -41,9 +41,9 @@ export default function Snackbar({ alert, onDismiss }: Props): JSX.Element {
           <div className="flex items-start">
             <div className="flex-shrink-0">
               {alert.type === "error" ? (
-                <XCircleIcon className="h-6 w-6 text-red-400" aria-hidden="true" />
+                <XCircleIcon className="h-6 w-6 text-mandy" aria-hidden="true" />
               ) : (
-                <CheckCircleIcon className="h-6 w-6 text-green-400" aria-hidden="true" />
+                <CheckCircleIcon className="h-6 w-6 text-jungle-green" aria-hidden="true" />
               )}
             </div>
             <div className="ml-3 w-0 flex-1 pt-0.5">
@@ -58,7 +58,7 @@ export default function Snackbar({ alert, onDismiss }: Props): JSX.Element {
             </div>
             <div className="ml-4 flex-shrink-0 flex">
               <button
-                className="bg-white rounded-md inline-flex text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                className="bg-white rounded-md inline-flex text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-scooter"
                 onClick={() => {
                   setShow(false);
                 }}

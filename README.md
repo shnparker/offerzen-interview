@@ -1,34 +1,35 @@
 # Offerzen Technical Assessment Submission
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-It also includes extended CRA configs to enable Tailwind support without having to eject to edit the postcss config.
-Formatting and linting provided by ESLint and Prettier - configs are overridden from the CRA defaults
+The defaults of CRA have been extended with Craco to enable Tailwind support without having to eject to edit the postcss config.
+Default ESLint rules of CRA have also been overridden.
 
-**This project was developed honestly. All code written has been written by me and me alone.**
-The project contains some additional features ontop of what was requested, in order to demonstrate capabilities. This may seem impossible to have coded all of this in 10-12 hours. A lot of the additional features have been copy pasted from a side project I am working on currently, such as the auth and the component lib.
-If any doubt to integrity and honesty is questioned, I am happy to share access to the side project to prove all commits have been only mine.
-
-Notes: Tailwind is running in PostCSS 7 compatability mode, as CRA does not yet support PostCSS 8 (it was held back due to normalize having to upgrade to postcss 8 first - https://github.com/facebook/create-react-app/issues/9664)
+Notes:
+Tailwind is running in PostCSS 7 compatability mode, as CRA does not yet support PostCSS 8 (https://github.com/facebook/create-react-app/issues/9664)
+Please do not update the packages for autoprefixer or postcss until CRA supports them.
+Tailwind has a huge css bundle, but uses purgeCSS to reduce it to a couple of KB on production build (don't panic if you see the network log on development mode).
 
 ## Available Features
 
-- Typescript for type safety
-- Linting and formatting
-- Auth system with remember me functionality
-- TailwindCSS for beautiful components with a utility first approach
-- Fully responsive design (apart from the table, this would have to be reworked entirely for mobile with stripped data display)
-- Sentry logging for error boundaries catching unhandled exceptions
-- API Calls have been mocked using MirageJS to simulate data fetching, with react-query wrappers being implemented around fetch to simplify async operations
-- A Snackbar system has been implemented with react context to provide a nice feedback system
-- A login screen was added just for fun, also to demonstrate webpack chunking with lazy loading of components.
-  - `usermame: demo@offerzen.com`
-  - `password: P@ssw0rd1!`
-- Form handling provided by Formik with schema validation provided by Yup (on the auth screens for demonstration)
-- Web vitals handled by CRA bootstrapping - they will be logged to console
-- I implemented your favicon :P
 - All features requested in spec
-
-Note: The images provided in the spec show that the table is sortable by last_communicated. The job spec did not ask for this so I did not implement it, but if you want me to I am happy to.
+- Fully written in TypeScript
+- Code quality via ESLint and Prettier
+- Improved version of the offerzen sign in screen
+- Authentication system with remember me functionality
+  - `usermame: demo@offerzen.com`
+  - `password: password`
+- Routing by react-router-dom v6 beta
+- Small and simple custom component library
+- Fully responsive designs
+- TailwindCSS utility-first appraoch design
+- Sentry logging for unhandled exceptions and mishandled API calls
+- Simulated data fetching with mocked backend via MirageJS
+- Query caching via react-query and wrapper hooks for async operations
+- Snackbar system to provide user feedback
+- Webpack chunking via lazy importing
+- Formik + Yup form validation and form submissions (demonstration purposes in the sign in screen)
+- Web Vitals reporting to console
+- Favicon :P
 
 ## Available Scripts
 

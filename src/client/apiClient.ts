@@ -1,4 +1,4 @@
-// Fetch wrapper to handle api requests and provides abstracted rest methods
+// Fetch wrapper to handle api requests and provides abstracted CRUD methods
 
 import * as Sentry from "@sentry/react";
 import { logout, getUser } from "../utils/authUtils";
@@ -24,7 +24,7 @@ async function apiClient<U>(endpoint: string, customConfig: RequestInit): Promis
     window
       .fetch(endpoint, config)
       .then(async (response) => {
-        //  Shouldn't be here, log em out
+        // User token is expired or invalid, log out
         if (response.status === 401) {
           logout();
           window.location.replace("/");
@@ -32,7 +32,7 @@ async function apiClient<U>(endpoint: string, customConfig: RequestInit): Promis
         }
 
         // Return empty object to prevent app from bombing when API does not return data on 200's
-        // This is a limitation with response.json()
+        // This is a limitation with response.json() and typescript
         const data: U & { error?: string } = await response.json().catch(() => ({}));
 
         // 422 General errors, return them to the form, don't try and handle it with the ErrorStatusContext

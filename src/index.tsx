@@ -19,6 +19,7 @@ ReactDOM.render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
+        {/* Final fallback for all other errors */}
         <ErrorBoundary fallback={SomethingWentWrong}>
           <ErrorHandlerProvider>
             <AuthProvider>

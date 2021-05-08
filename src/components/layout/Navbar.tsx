@@ -10,7 +10,8 @@ export default function Navbar(): JSX.Element {
   return (
     <nav
       className={classNames(
-        //   This is needed so that the vh height of the layout on the sign in does not cause an overscroll, by using fixed's floating layout
+        //This is needed so that the vh height of the layout on the sign in does not cause an overscroll
+        // Making the nav floating off the box model with fixed allows full vh to work normally on the layout
         location.pathname === "/sign-in" ? " fixed w-full" : "",
         `bg-oxford-blue`
       )}

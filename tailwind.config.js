@@ -1,4 +1,3 @@
-// eslint warning in this file can safely be ignored
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
@@ -15,6 +14,7 @@ module.exports = {
         "jungle-green": "#34B96F",
         "scooter-darker": "#3A99C5",
         "catskill-white": "#EEF3F6",
+        mandy: "#E25C59",
       },
     },
   },

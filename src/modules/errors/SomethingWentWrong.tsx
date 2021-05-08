@@ -10,7 +10,7 @@ interface Props {
 export default function SomethingWentWrong({ resetError }: Props): JSX.Element {
   return (
     <ErrorLayout>
-      <ExclamationCircleIcon className="h-36 w-36 text-orange-600 m-auto mb-2" />
+      <ExclamationCircleIcon className="h-36 w-36 text-scooter m-auto mb-2" />
       <h2 className="text-4xl font-extrabold tracking-tight text-gray-900">
         We&apos;re sorry - something went wrong.
       </h2>

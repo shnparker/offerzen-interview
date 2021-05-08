@@ -48,7 +48,7 @@ export default function SignInForm(): JSX.Element {
             <button
               type="button"
               onClick={() =>
-                newSuccessSnackbar({ title: "demo@offerzen.com", message: "P@ssw0rd1!" })
+                newSuccessSnackbar({ title: "demo@offerzen.com", message: "password" })
               }
               className="font-medium text-scooter hover:text-scooter-darker"
             >

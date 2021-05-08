@@ -1,3 +1,4 @@
+// Just makes class chaining easier when doing conditional classes
 function classNames(...classes: string[]): string {
   return classes.filter(Boolean).join(" ");
 }

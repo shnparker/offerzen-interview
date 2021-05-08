@@ -8,7 +8,7 @@ export default function NotFound(): JSX.Element {
 
   return (
     <ErrorLayout>
-      <QuestionMarkCircleIcon className="h-36 w-36 text-orange-600 m-auto mb-2" />
+      <QuestionMarkCircleIcon className="h-36 w-36 text-scooter m-auto mb-2" />
       <h2 className="text-5xl font-extrabold tracking-tight text-gray-900 sm:text-6xl">
         Oops! Not found
       </h2>
@@ -18,7 +18,7 @@ export default function NotFound(): JSX.Element {
       </p>
       <p className="mt-2">
         If you think something is broken, please contact{" "}
-        <a className="text-orange-600 hover:text-orange-500" href="mailto:support@offerzen.com">
+        <a className="text-scooter hover:text-scooter-darker" href="mailto:support@offerzen.com">
           support@offerzen.com
         </a>
       </p>

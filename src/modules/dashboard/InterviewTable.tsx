@@ -1,7 +1,7 @@
 import { formatLastCommunicated } from "../../utils/dateUtils";
 import { classNames, formatCurrency } from "../../utils/domUtils";
 import { Spinner } from "../../components/lib";
-import { Interview } from "../../types/api";
+import { Interview } from "../../types";
 import { useMutateAsync } from "../../client/useAsync";
 import { POST } from "../../client/apiClient";
 import { useSnackbar } from "../../contexts/SnackbarContext";

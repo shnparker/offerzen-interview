@@ -16,6 +16,7 @@ const SnackbarContext = createContext<SnackbarContextType | undefined>(undefined
 function SnackBarProvider({ children }: { children: ReactNode }): JSX.Element {
   const [alerts, setAlerts] = useState<SnackbarMessage[]>([]);
 
+  // These functions could be simplified and extracted into one method
   const newSuccessSnackbar = useCallback((content: NewSnackbar | string) => {
     const snackbar = { id: Date.now(), type: "success" };
 
@@ -26,6 +27,7 @@ function SnackBarProvider({ children }: { children: ReactNode }): JSX.Element {
     }
   }, []);
 
+  // These functions could be simplified and extracted into one method
   const newErrorSnackbar = useCallback((content: NewSnackbar | string) => {
     const snackbar = { id: Date.now(), type: "error" };
 

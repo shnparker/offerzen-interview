@@ -1,10 +1,10 @@
 import * as Sentry from "@sentry/react";
 import { setLogger } from "react-query";
 
-if (process.env.REACT_APP_APP_STAGE !== "development") {
+if (process.env.NODE_ENV !== "development") {
   Sentry.init({
     dsn: process.env.REACT_APP_SENTRY_DSN,
-    environment: process.env.REACT_APP_APP_STAGE,
+    environment: process.env.NODE_ENV,
   });
 
   setLogger({

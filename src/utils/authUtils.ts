@@ -2,8 +2,8 @@ import { UserSignInResponse } from "../types/api";
 
 const sessionKey = "_offerzen_session_";
 
-// This should all be done with httpOnly cookies but localstorage is fine for demo purposes
-// In the case of JWT authentication, the token should come in an HTTP cookie, and the signed in user can be done in localstorage as long as it has no sensitive information
+// This should all be done with httpOnly cookies but localStorage is fine for demo purposes
+// In the case of JWT authentication, the token should come in an httpOnly cookie, and the signed in user can be done in localStorage as long as it has no sensitive information
 
 const getUser = (): UserSignInResponse => {
   const rememberMe = localStorage.getItem("rememberMe") === "true";

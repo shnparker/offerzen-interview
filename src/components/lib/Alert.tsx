@@ -18,9 +18,9 @@ function Alert({ children, onDismiss, variant, ...props }: HTMLProps<HTMLDivElem
       <div className="flex">
         <div className="flex-shrink-0">
           {isSuccessAlert ? (
-            <CheckCircleIcon className="h-5 w-5 text-green-400" />
+            <CheckCircleIcon className="h-5 w-5 text-jungle-green" />
           ) : (
-            <XCircleIcon className="h-5 w-5 text-red-400" />
+            <XCircleIcon className="h-5 w-5 text-mandy" />
           )}
         </div>
         <div className="ml-3">

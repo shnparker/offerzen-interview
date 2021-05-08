@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { GET } from "../../client/apiClient";
 import { useAsync } from "../../client/useAsync";
 import { useSnackbar } from "../../contexts/SnackbarContext";
-import { Interview } from "../../types/api";
+import { Interview } from "../../types";
 import InterviewTable from "./InterviewTable";
 
 export default function Dashboard(): JSX.Element {
