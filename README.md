@@ -50,7 +50,7 @@ Runs the code formatter with write mode enabled to ensure opinionated code stand
 
 ### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
+Launches the test runner in the interactive watch mode.
 
 ### `yarn build`
 
