@@ -21,7 +21,7 @@ Tailwind has a huge css bundle, but uses purgeCSS to reduce it to a couple of KB
 - Routing by react-router-dom v6 beta
 - Small and simple custom component library
 - Fully responsive designs
-- TailwindCSS utility-first appraoch design
+- TailwindCSS utility-first approach design
 - Sentry logging for unhandled exceptions and mishandled API calls
 - Simulated data fetching with mocked backend via MirageJS
 - Query caching via react-query and wrapper hooks for async operations
